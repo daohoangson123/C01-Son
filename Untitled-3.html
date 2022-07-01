@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bài tập 01</title>
+<style>
+
+.header {
+  padding: 50px;
+  font-size: 40px;
+  text-align: left;
+}
+
+.search {
+  float: right;
+  width: 20%;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 50%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 15%;
+  padding-left: 30px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  text-align: center;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"> Back </button>
+  <script>
+
+      var mybutton = document.getElementById("myBtn");
+      
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+  </script>
+
+<div class="header">
+<div>
+  <h1 style="font-size: 50px; color: crimson; font-family: 'Times New Roman', Times, serif";>Trang web đầu tiên</h1>
+  <p style="font-size:40px"> &#128512; &#128516; &#128525; &#128151;</p>
+</div>
+<img src="./c01-html-stu/img/planets.gif" alt="sun-venus-mercury.gif" usemap="#planets">
+  <map name="planets">
+  <area shape="rect" coords=" 0, 5, 77, 125" alt="Sun" href="./c01-html-stu/page/sun.html" target="_blank">
+  <area shape="circle" coords=" 92, 58, 12" alt="Mer" href="./c01-html-stu/page/mercur.html" target="_blank">
+  <area shape="circle" coords=" 123, 58, 15" alt="Ven" href="./c01-html-stu/page/venus.html" target="_blank">
+  </map>
+</div>
+<style>
+  #navbar {background:rgb(255, 176, 4);} 
+</style>
+  <nav id="navbar">
+      <a href="#Footer">Footer</a>
+      &nbsp<a href="./c01-html-stu/page/sun.html" target="_blank">Sun</a>
+      &nbsp<a href="tel:+0816020416" target="_blank">Gọi ngay</a>
+      &nbsp<a href="javascript:alert('Kmin chào bạn!');">Lời chào</a>
+      &nbsp<a href="mailto:academy@kmin.edu.vn" target="_blank">Liên hệ</a>
+      <a class="search" href="https://www.google.com.vn/" target="_blank">Tìm kiếm</a>
+  </nav>
+</div>
+
+<div class="row">
+<div class="leftcolumn">
+<div class="card">
+  <h2 style="color:orange;">Tiêu đề 01</h2>
+  <b>Mô tả ngắn, Dec 7, 2025</b>
+  <p>If you're looking for random paragraphs, you've come to the right place.
+  When a random word or a random sentence isn't quite enough, the next logical step
+  is to find a random paragraph.
+  <br><img src="./c01-html-stu/img/article01.jpg" width="100%" alt="dunknow.jpg"><br>
+  We created the Random Paragraph Generator with you in mind.
+  The process is quite simple. Choose the number of random paragraphs you'd like
+  to see and click the button.
+  Your chosen number of paragraphs will instantly appear.
+  While it may not be obvious to everyone, there are a number of reasons creating
+  random paragraphs can be useful.
+  A few examples of how some people use this generator are listed in the following
+  paragraphs.
+  </p>
+</div>
+<div class="card">
+    <h2 style="color:orange;">Tiêu đề 02</h2>
+    <b>Mô tả ngắn, Dec 7, 2025</b>
+    <p>Danh sách học viên tham gia Bug Sharing</p>
+    <style>
+    table, th, td {border: 1px solid black;}
+    </style>
+<table>
+          <tr>
+          <th>Họ tên</th>
+          <th>Lớp</th>
+          <th>SĐT</th>
+          </tr>
+          <tr>
+          <td>Vũ Đình Bảo</td>
+          <td>Tư duy và kỹ năng lập trình</td>
+          <td>0384004298</td>
+          </tr>
+          <tr>
+          <td>Lê Hồng Phúc</td>
+          <td>Lập trình web Front-end</td>
+          <td>0123456789</td>
+          </tr>
+          <tr>
+          <td>Đặng Minh Tân</td>
+          <td>Lập trình Back-end với NodeJS</td>
+          <td>null</td>
+          </tr>
+</table>
+<div class="card">
+  <h2 style="color:orange;">Tiêu đề 03</h2>
+    Các món có thể gọi:
+    <ul style="list-style-type:square">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+    <hr>
+    Các món có thể gọi:
+    <ol type="A">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <ol type="1" start="4">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <hr>
+    <p>Coffe và Milk nghĩa là gì?</p>
+    <dl>
+        <dt>Coffe</dt>
+        <dd>- Thức uống làm cho bạn phê</dd>
+        <dt>Milk</dt>
+        <dd>- Thức uống tốt cho sức khỏe</dd>
+    </dl>
+    <hr>
+    <p>Menu chi tiết hơn</p>
+    <ul>
+        <li>Coffe</li>
+        <li>Tea</li>
+    <ul>
+        <li><dt>Black tea</dt></li>
+        <li><dt>Green tea</dt></li>
+    </ul>
+        <li>Milk</li>
+    </ul>
+    <h3 id="head4" style="color: rgb(7, 43, 73);">Đăng ký khóa học</h3>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSevn96h9DiVPWt5dXdyJx_4S29PcmLAh5fKTKhksw2wvJoaXQ/viewform?embedded=true"
+    width="640" height="1054" frameborder="0" marginheight="0" marginwidth="0">Đang tải…</iframe>
+</div>
+</div>
+</div>
+
+  <div class="rightcolumn">
+    <div class="card">
+    <p style="text-align: center;"><img src="./c01-html-stu/img/avarta.png" width="100%" alt="avatar.png"></p>
+    <p style="text-align: center;"><b> Vũ Đình Bảo</b></p>
+    <p> Lorem ...</p>
+    </div>
+    <div class="card">
+    <b>Bài mới</b>
+    <br><br>
+    <audio controls>
+    <source src="./c01-html-stu/media/audio.mp3" type="audio/mpeg">
+    </audio>
+    <br><br>
+    <video width="540" height="360" controls>
+    <source src="./c01-html-stu/media/video.mp4" type="video/mp4">
+    </video>
+    </div>
+    <div class="card">
+      <a href="https://kmin.edu.vn/" target="_blank">
+      <img src="./c01-html-stu/img/noel.gif" alt="Noel.gif">
+      </a>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v14.0" nonce="7jhhMyKm"></script>
+    <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+    <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <style>
+  #Footer {background: rgb(7, 43, 73); margin: 0;} 
+  </style>
+<h1 id="Footer" style="color:orange; text-align: center; font-size: 50px"> Footer: Kmin Academy
+</h1>
+</div>
+
+</body>
+</html>

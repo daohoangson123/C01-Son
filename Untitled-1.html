@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+    <title>Bài tập 01</title>
+</head>
+<svg id="SVG" width="500" height="200">
+  <rect width="300" height="100" stroke="black" stroke-with="10" fill="white"/>
+  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="green" />
+  <circle cx="150" cy="50" r="40" stroke="black" stroke-width="4" fill="yellow" />
+  <circle cx="250" cy="50" r="40" stroke="black" stroke-width="4" fill="red" />
+</svg>
+<body>
+
+<div id="head">
+    <h1 style="font-size: 50px; color: crimson; font-family: 'Times New Roman', Times, serif";>Trang web đầu tiên</h1>
+    <p style="font-size:50px">
+    &#128512; &#128516; &#128525; &#128151;</p>
+</div>
+
+<section>
+  <img src="./c01-html-stu/img/planets.gif" alt="sun-venus-mercury.gif" usemap="#planets">
+  <map name="planets">
+    <area shape="rect" coords=" 0, 5, 77, 125" alt="Sun" href="./c01-html-stu/page/sun.html" target="_blank">
+    <area shape="circle" coords=" 92, 58, 12" alt="Mer" href="./c01-html-stu/page/mercur.html" target="_blank">
+    <area shape="circle" coords=" 123, 58, 15" alt="Ven" href="./c01-html-stu/page/venus.html" target="_blank">
+  </map>
+<style>
+    body {background:rgb(231, 229, 224); margin: 100px;} 
+    #navbar {background:rgb(255, 176, 4);} 
+</style>
+<nav id="navbar">
+    <a href="#Footer">Footer</a>
+    &nbsp<a href="./c01-html-stu/page/sun.html" target="_blank">Sun</a>
+    &nbsp<a href="tel:+0816020416" target="_blank">Gọi ngay</a>
+    &nbsp<a href="javascript:alert('Xin Chào!');">Lời chào</a>
+    &nbsp<a href="mailto:academy@kmin.edu.vn" target="_blank">Liên hệ</a>
+    <a href="https://www.google.com.vn/" target="_blank">Tìm kiếm</a>
+</nav>
+</section>
+<aside id="leftside">
+<section>
+    <h2 id="head1" style="color:orange;">Tiêu đề 01</h2>
+    <b>Mô tả ngắn, Dec 7, 2025</b>
+    <p>If you're looking for random paragraphs, you've come to the right place.
+    When a random word or a random sentence isn't quite enough, the next logical step is to find a random paragraph.
+    <br><img src="./c01-html-stu/img/article01.jpg" width="100%" height="100%" alt="dunknow.jpg"><br>
+    We created the Random Paragraph Generator with you in mind.
+    The process is quite simple. Choose the number of random paragraphs you'd like to see and click the button.
+    Your chosen number of paragraphs will instantly appear.
+    While it may not be obvious to everyone, there are a number of reasons creating random paragraphs can be useful.
+    A few examples of how some people use this generator are listed in the following paragraphs.
+    </p>
+</section>
+
+<section>
+    <h2 id="head2" style="color:orange;">Tiêu đề 02</h2>
+    <b>Mô tả ngắn, Dec 7, 2025</b>
+    <p>Danh sách học viên tham gia Bug Sharing</p>
+    <style>
+    table, th, td {border: 1px solid black;}
+    </style>
+    <table>
+        <tr>
+        <th>Họ tên</th>
+        <th>Lớp</th>
+        <th>SĐT</th>
+        </tr>
+        <tr>
+        <td>Vũ Đình Bảo</td>
+        <td>Tư duy và kỹ năng lập trình</td>
+        <td>0384004298</td>
+        </tr>
+        <tr>
+        <td>Lê Hồng Phúc</td>
+        <td>Lập trình web Front-end</td>
+        <td>0123456789</td>
+        </tr>
+        <tr>
+        <td>Đặng Minh Tân</td>
+        <td>Lập trình Back-end với NodeJS</td>
+        <td>null</td>
+        </tr>
+      </table>
+</section>
+
+<section>
+    <h2 id="head3" style="color:orange;">Tiêu đề 03</h2>
+Các món có thể gọi:
+<ul style="list-style-type:square">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+</ul>
+
+<ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+</ul>
+
+<hr>
+
+Các món có thể gọi:
+<ol type="A">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+</ol>
+
+<ol type="1" start="4">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+</ol>
+
+<hr>
+
+<p>Coffe và Milk nghĩa là gì?</p>
+<dl>
+    <dt>Coffe</dt>
+    <dd>- Thức uống làm cho bạn phê</dd>
+    <dt>Milk</dt>
+    <dd>- Thức uống tốt cho sức khỏe</dd>
+</dl>
+
+<hr>
+
+<p>Menu chi tiết hơn</p>
+<ul>
+    <li>Coffe</li>
+    <li>Tea</li>
+<ul>
+    <li><dt>Black tea</dt></li>
+    <li><dt>Green tea</dt></li>
+</ul>
+    <li>Milk</li>
+</ul>
+</section>
+
+<section>
+    <h3 id="head4" style="color: rgb(7, 43, 73);">Đăng ký khóa học</h3>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeMBIoBAB6LT9Y8YjH_ana1x3SOuEqJURdcDgPIHavenkxlvA/viewform?embedded=true"
+    width="640" height="1054" frameborder="0" marginheight="0" marginwidth="0">Đang tải…</iframe>
+</section>
+</aside>
+
+<aside id="rightside">
+    <img src="./c01-html-stu/img/avarta.png" alt="avatar.png">
+    <br><b> Vũ Đình Bảo</b>
+    <p> Lorem ...</p>
+    <br><b>Bài mới</b>
+    <br><audio controls>
+        <source src="./c01-html-stu/media/audio.mp3" type="audio/mpeg">
+    </audio>
+    <br><video width="720" height="360" controls>
+        <source src="./c01-html-stu/media/video.mp4" type="video/mp4">
+    </video>
+    <br>
+    <img src="./c01-html-stu/img/noel.gif" alt="Noel.gif">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v14.0" nonce="7jhhMyKm"></script>
+    <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+    <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+
+</aside>
+
+<section>
+<footer>
+    <style>
+    #Footer {background: rgb(7, 43, 73); margin: 0;} 
+    </style>
+<section>
+<a href="https://kmin.edu.vn/" target="_blank">
+<h1 id="Footer" style="color:orange; text-align: center; font-size: 50px"> Footer: Kmin Academy</h1>
+</a>
+</footer>
+</section>
+
+</body>
+
+</html>
